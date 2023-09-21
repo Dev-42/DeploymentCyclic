@@ -8,7 +8,7 @@ app.get('/' , (req,res) => {
     res.send('Base point')
 })
 app.get('/blogs' , (req,res) => {
-    res.send({status : 'ok' , data : 'Blogs data'})
+    res.send({status : 'ok' , data : process.env.NAME})
 })
 
 app.listen(process.env.PORT,()=>{
